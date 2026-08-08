@@ -1,0 +1,18 @@
+//
+//  Item.swift
+//  CombineFrameworkExample
+//
+//  Created by Sujeet kumar on 08/08/26.
+//
+
+import Foundation
+import SwiftData
+
+@Model
+final class Item {
+    var timestamp: Date
+    
+    init(timestamp: Date) {
+        self.timestamp = timestamp
+    }
+}
