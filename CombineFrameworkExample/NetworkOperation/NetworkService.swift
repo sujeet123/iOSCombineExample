@@ -117,3 +117,55 @@ func fetchProfileDetailsUsingGeneric() async throws -> Data {
     }
 }
 
+func checkForLoop() {
+    let array = ["sujeet", "Kumar", "Tiwary"]
+    let itmes = [30, 40, 90]
+
+    
+    for item in array {
+        print(array)
+    }
+    
+    let dic = ["name": "Sujeet", "lastName": "Tiwary"]
+    for (key, value) in dic {
+        print("\(key)  \(value)")
+    }
+    
+    for index in 1...3 {
+        
+    }
+    for item in itmes {
+        print("In the loop, the belwo items \(item)")
+    }
+    let length = itmes.count
+    for index in 0..<length {
+        print("The item at the index \(index) is \(itmes[index])")
+    }
+}
+
+func reverseIntegerArray() -> [Int] {
+    var intArray = [2,4,9,8,3]
+    var left = 0
+    var right = intArray.count - 1
+    while left < right {
+        intArray.swapAt(left, right)
+        left += 1
+        right -= 1
+    }
+    return intArray
+}
+
+func reverseIntegerArrayManually() -> [Int] {
+    var intArray = [2,4,9,8,3]
+    var left = 0
+    var right = intArray.count - 1
+    while left < right {
+        let item = intArray[left]
+        intArray[left] = intArray[right]
+        intArray[right] = item
+        //intArray.swapAt(left, right)
+        left += 1
+        right -= 1
+    }
+    return intArray
+}
