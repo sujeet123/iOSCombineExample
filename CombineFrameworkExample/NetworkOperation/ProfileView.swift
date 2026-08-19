@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @StateObject private var viewModel = ProfileViewModel()
+    @StateObject private var viewModel = ProfileViewModel(networkService: NetworkService())
     
     var body: some View {
         VStack(spacing: 16) {
@@ -38,3 +38,13 @@ struct ProfileView: View {
         .padding()
     }
 }
+
+protocol Publisher {
+    associatedtype Output
+    associatedtype Failure: Error
+}
+
+func getPublisher() -> Publisher {
+    
+}
+
