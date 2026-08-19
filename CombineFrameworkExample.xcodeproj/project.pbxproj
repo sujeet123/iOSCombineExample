@@ -29,9 +29,42 @@
 		BA9E4A8530273912004684D3 /* CombineFrameworkExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineFrameworkExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BA9E4A9D3027AB24004684D3 /* Exceptions for "CombineFrameworkExample" folder in "CombineFrameworkExampleTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Debounce/Data/SearchService.swift,
+				"Debounce/Entity/ SearchResult.swift",
+				Debounce/Presentation/SearchView.swift,
+				Debounce/Presentation/SearchViewController.swift,
+				Debounce/Presentation/SearchViewModel.swift,
+				NetworkOperation/NetworkService.swift,
+				NetworkOperation/ProfileView.swift,
+				NetworkOperation/ProfileViewModel.swift,
+				NetworkOperation/UserProfile.swift,
+			);
+			target = BA9E4A7A30273912004684D3 /* CombineFrameworkExampleTests */;
+		};
+		BABEEA543032E78C00218713 /* Exceptions for "CombineFrameworkExample" folder in "CombineFrameworkExampleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Debounce/Data/SearchService.swift,
+				"Debounce/Entity/ SearchResult.swift",
+				Debounce/Presentation/SearchView.swift,
+				Debounce/Presentation/SearchViewController.swift,
+				Debounce/Presentation/SearchViewModel.swift,
+			);
+			target = BA9E4A8430273912004684D3 /* CombineFrameworkExampleUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BA9E4A6E3027390B004684D3 /* CombineFrameworkExample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BA9E4A9D3027AB24004684D3 /* Exceptions for "CombineFrameworkExample" folder in "CombineFrameworkExampleTests" target */,
+				BABEEA543032E78C00218713 /* Exceptions for "CombineFrameworkExample" folder in "CombineFrameworkExampleUITests" target */,
+			);
 			path = CombineFrameworkExample;
 			sourceTree = "<group>";
 		};

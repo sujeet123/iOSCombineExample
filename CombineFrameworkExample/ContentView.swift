@@ -53,6 +53,18 @@ struct ContentView: View {
             }
         }
     }
+    
+    func getViewS() -> View {
+       return Text("sujeet")
+    }
+    
+    func getView2(isFlag: Bool) -> AnyView {
+        if isFlag {
+            return AnyView(Text("sujeet"))
+        } else {
+            return AnyView(Button("Click Button"){ })
+        }
+    }
 }
 
 #Preview {
