@@ -38,13 +38,3 @@ struct ProfileView: View {
         .padding()
     }
 }
-
-protocol Publisher {
-    associatedtype Output
-    associatedtype Failure: Error
-}
-
-func getPublisher() -> Publisher {
-    
-}
-
